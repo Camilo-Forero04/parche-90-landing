@@ -12,7 +12,7 @@ export default function OrderForm() {
 
     // FUNCIÓN QUE ARMA EL MENSAJE Y ABRE WHATSAPP
     const enviarPedido = (e: React.FormEvent) => {
-        e.preventDefault(); // Evita que la página recargue
+        e.preventDefault();
 
         // Validaciones
         if (!genero) {
@@ -22,6 +22,14 @@ export default function OrderForm() {
         if (!talla) {
             alert('Por favor selecciona una talla antes de continuar.');
             return;
+        }
+
+        if (typeof window !== 'undefined' && (window as any).fbq) {
+            (window as any).fbq('track', 'Lead', {
+                content_name: 'Camiseta Colombia Versión Jugador',
+                currency: 'COP',
+                value: 129900,
+            });
         }
 
         // Tu número de WhatsApp de Parche 90
