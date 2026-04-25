@@ -7,7 +7,7 @@ export default function TechSection() {
 
                 {/* IMAGEN: LADO IZQUIERDO */}
                 <div className="s2-img-side" style={{ flex: '1 1 450px', borderRadius: '40px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.5)', lineHeight: 0 }}>
-                    <Image src="/imagenes/img3.png" alt="Tecnología Mesh" sizes="(max-width: 768px) 100vw, 50vw" style={{ width: '100%' }} />
+                    <Image src="/imagenes/img3.webp" alt="Tecnología Mesh" sizes="(max-width: 768px) 100vw, 50vw" style={{ width: '100%' }} />
                 </div>
 
                 {/* TEXTO: LADO DERECHO */}

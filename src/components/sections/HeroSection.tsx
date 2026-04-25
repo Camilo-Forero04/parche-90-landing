@@ -119,11 +119,12 @@ export default function HeroSection() {
                     }}
                 >
                     <Image
-                        src="/imagenes/img1.png"
+                        src="/imagenes/img1.webp"
                         alt="Colombia 2026"
                         width={850}
                         height={850}
                         priority={true}
+                        fetchPriority="high"
                         sizes="(max-width: 768px) 100vw, 800px"
                         style={{
                             width: '100%',

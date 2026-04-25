@@ -54,7 +54,7 @@ export default function IdentitySection() {
                     lineHeight: 0,
                     boxShadow: '0 25px 50px rgba(0,0,0,0.5)'
                 }}>
-                    <Image src="/imagenes/img2.png" alt="Camiseta Frontal" style={{ width: '100%', display: 'block' }} />
+                    <Image src="/imagenes/img2.webp" alt="Camiseta Frontal" style={{ width: '100%', display: 'block' }} />
                 </div>
             </div>
 

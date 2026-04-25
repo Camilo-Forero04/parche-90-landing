@@ -33,6 +33,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="preconnect" href="https://www.facebook.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+      </head>
       <body className="min-h-full flex flex-col">
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
