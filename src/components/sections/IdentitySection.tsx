@@ -46,27 +46,31 @@ export default function IdentitySection() {
                     </div>
                 </div>
 
-                {/* IMAGEN: LADO DERECHO (Con tu radio de 48px) */}
+                {/* IMAGEN: LADO DERECHO (ESTILO RECTÁNGULO HORIZONTAL) */}
                 <div className="s3-img-side reveal-right" style={{
                     flex: '1 1 450px',
-                    backgroundColor: '#0a0a0a', /* 👇 1. Agregamos el fondo oscuro */
-                    padding: '80px 40px',       /* 👇 2. Agregamos el padding para "achicar" la camiseta */
+                    backgroundColor: '#0a0a0a',
                     borderRadius: '48px',
-                    display: 'flex',            /* 👇 3. Centramos la imagen perfectamente */
+                    display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
                     overflow: 'hidden',
-                    boxShadow: '0 25px 50px rgba(0,0,0,0.5)'
+                    boxShadow: '0 25px 50px rgba(0,0,0,0.5)',
+                    /* 👇 1. FORZAMOS LA CAJA A SER RECTANGULAR HORIZONTAL (ej. 4 de ancho x 3 de alto) 👇 */
+                    aspectRatio: '4/3',
+                    /* 👇 2. PADDING PARA SEPARARLA DE LOS BORDES SUPERIOR/INFERIOR 👇 */
+                    padding: '40px'
                 }}>
                     <Image
                         src="/imagenes/img2.png"
-                        alt="Camiseta Frontal"
+                        alt="Camiseta"
                         width={600}
                         height={800}
                         style={{
-                            maxWidth: '100%',
-                            height: 'auto',
-                            objectFit: 'contain', /* 👇 4. Esto evita que se corte el cuello */
+                            /* 👇 3. ESTO ES VITAL: La foto nunca superará el 100% del alto de la caja 👇 */
+                            maxHeight: '100%',
+                            width: 'auto', /* Mantiene la proporción sin estirarse a los lados */
+                            objectFit: 'contain',
                             display: 'block'
                         }}
                     />
