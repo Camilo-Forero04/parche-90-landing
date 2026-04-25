@@ -3,7 +3,7 @@
 
 export default function WhatsAppButton() {
     const phoneNumber = "573026656758";
-    const message = "¡Hola! Vengo de la página web y quiero mi camiseta de Colombia.";
+    const message = "¡Hola! Vi la camiseta Colombia 2026 en Parche 90 y quiero hacer mi pedido 🇨🇴";
     const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     return (
