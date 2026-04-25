@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function CtaSection() {
     return (
         <section className="scene" id="s4" style={{
@@ -22,7 +24,7 @@ export default function CtaSection() {
                     border: '1px solid rgba(245, 208, 0, 0.15)',
                     lineHeight: 0
                 }}>
-                    <img src="/imagenes/img4.png" alt="Camiseta Final" style={{ width: '100%', filter: 'drop-shadow(0 0 25px rgba(245, 208, 0, 0.15))' }} />
+                    <Image src="/imagenes/img4.png" alt="Camiseta Final" style={{ width: '100%', filter: 'drop-shadow(0 0 25px rgba(245, 208, 0, 0.15))' }} />
                 </div>
 
                 {/* BRANDING Y URGENCIA */}

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function TechSection() {
     return (
         <section className="scene" id="s2" style={{ padding: '60px 20px' }}>
@@ -5,7 +7,7 @@ export default function TechSection() {
 
                 {/* IMAGEN: LADO IZQUIERDO */}
                 <div className="s2-img-side" style={{ flex: '1 1 450px', borderRadius: '40px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.5)', lineHeight: 0 }}>
-                    <img src="/imagenes/img3.png" alt="Tecnología Mesh" style={{ width: '100%' }} />
+                    <Image src="/imagenes/img3.png" alt="Tecnología Mesh" width={1200} height={1200} style={{ width: '100%' }} />
                 </div>
 
                 {/* TEXTO: LADO DERECHO */}

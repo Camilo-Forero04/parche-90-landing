@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function HeroSection() {
     return (
         <section className="scene" id="s1" style={{ padding: '40px 20px' }}>
@@ -116,9 +118,12 @@ export default function HeroSection() {
                         transition: 'transform 0.3s ease'
                     }}
                 >
-                    <img
+                    <Image
                         src="/imagenes/img1.png"
-                        alt="Colombia 2024"
+                        alt="Colombia 2026"
+                        width={850}
+                        height={850}
+                        priority
                         style={{
                             width: '100%',
                             height: 'auto',
