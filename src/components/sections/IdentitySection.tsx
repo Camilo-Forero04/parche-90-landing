@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function IdentitySection() {
     return (
         <section className="scene" id="s3" style={{ padding: '60px 20px', position: 'relative', overflow: 'hidden' }}>
@@ -46,35 +44,20 @@ export default function IdentitySection() {
                     </div>
                 </div>
 
+                {/* IMAGEN: LADO DERECHO (Con tu radio de 48px) */}
                 <div className="s3-img-side reveal-right" style={{
                     flex: '1 1 450px',
-                    backgroundColor: '#0a0a0a',
                     borderRadius: '48px',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
                     overflow: 'hidden',
-                    boxShadow: '0 25px 50px rgba(0,0,0,0.5)',
-                    aspectRatio: '740 / 390',
-                    padding: '30px'
+                    lineHeight: 0,
+                    boxShadow: '0 25px 50px rgba(0,0,0,0.5)'
                 }}>
-                    <Image
-                        src="/imagenes/img2.png"
-                        alt="Camiseta"
-                        width={600}
-                        height={800}
-                        style={{
-
-                            maxHeight: '100%',
-                            width: 'auto',
-                            objectFit: 'contain',
-                            display: 'block'
-                        }}
-                    />
+                    <img src="/imagenes/img2.png" alt="Camiseta Frontal" style={{ width: '100%', display: 'block' }} />
                 </div>
+            </div>
 
-                {/* LETRA C GIGANTE DE FONDO */}
-                <div className="big-bg" style={{ position: 'absolute', right: '5%', bottom: '-5%', fontSize: '25vw', opacity: 0.03, zIndex: -1, fontWeight: 'bold', lineHeight: 1 }}>C</div>
+            {/* LETRA C GIGANTE DE FONDO */}
+            <div className="big-bg" style={{ position: 'absolute', right: '5%', bottom: '-5%', fontSize: '25vw', opacity: 0.03, zIndex: -1, fontWeight: 'bold', lineHeight: 1 }}>C</div>
         </section>
     );
 }
