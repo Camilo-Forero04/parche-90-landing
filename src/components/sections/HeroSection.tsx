@@ -123,7 +123,8 @@ export default function HeroSection() {
                         alt="Colombia 2026"
                         width={850}
                         height={850}
-                        priority
+                        priority={true}
+                        sizes="(max-width: 768px) 100vw, 800px"
                         style={{
                             width: '100%',
                             height: 'auto',
