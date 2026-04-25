@@ -39,6 +39,12 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.facebook.com" />
         <link rel="preconnect" href="https://connect.facebook.net" />
+        <link
+          rel="preload"
+          as="image"
+          href="/imagenes/img1.webp"
+          fetchPriority="high"
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <Script id="meta-pixel" strategy="afterInteractive">
