@@ -25,7 +25,7 @@ export default function OrderForm() {
         }
 
         // Tu número de WhatsApp de Parche 90
-        const numeroWhatsApp = "573000000000";
+        const numeroWhatsApp = "573026656758";
 
         // Armamos el texto que te va a llegar
         const texto = `🔥 *NUEVO PEDIDO - PARCHE 90* 🔥\n\n` +

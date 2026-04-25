@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
     // Reemplaza con tu número de Parche 90 (incluye el 57 de Colombia)
-    const phoneNumber = "573000000000";
+    const phoneNumber = "573026656758";
     const message = "¡Hola! Vengo de la página web y quiero mi camiseta de Colombia.";
 
     const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

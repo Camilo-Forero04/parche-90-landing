@@ -51,7 +51,7 @@ export default function Navbar() {
                 <button onClick={() => scrollTo('s2')} style={linkStyle}>TECNOLOGÍA</button>
                 <button onClick={() => scrollTo('s3')} style={linkStyle}>IDENTIDAD</button>
                 <button
-                    onClick={() => scrollTo('s4')}
+                    onClick={() => scrollTo('formulario')}
                     style={{
                         ...linkStyle,
                         backgroundColor: '#F5D000',
