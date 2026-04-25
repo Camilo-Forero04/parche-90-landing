@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function IdentitySection() {
     return (
         <section className="scene" id="s3" style={{ padding: '60px 20px', position: 'relative', overflow: 'hidden' }}>
@@ -52,7 +54,7 @@ export default function IdentitySection() {
                     lineHeight: 0,
                     boxShadow: '0 25px 50px rgba(0,0,0,0.5)'
                 }}>
-                    <img src="/imagenes/img2.png" alt="Camiseta Frontal" style={{ width: '100%', display: 'block' }} />
+                    <Image src="/imagenes/img2.png" alt="Camiseta Frontal" style={{ width: '100%', display: 'block' }} />
                 </div>
             </div>
 
