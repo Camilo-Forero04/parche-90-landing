@@ -49,18 +49,31 @@ export default function IdentitySection() {
                 {/* IMAGEN: LADO DERECHO (Con tu radio de 48px) */}
                 <div className="s3-img-side reveal-right" style={{
                     flex: '1 1 450px',
+                    backgroundColor: '#0a0a0a', /* 👇 1. Agregamos el fondo oscuro */
+                    padding: '80px 40px',       /* 👇 2. Agregamos el padding para "achicar" la camiseta */
                     borderRadius: '48px',
+                    display: 'flex',            /* 👇 3. Centramos la imagen perfectamente */
+                    justifyContent: 'center',
+                    alignItems: 'center',
                     overflow: 'hidden',
-                    lineHeight: 0,
                     boxShadow: '0 25px 50px rgba(0,0,0,0.5)'
                 }}>
-                    <Image src="/imagenes/img2.png" alt="Camiseta Frontal" width={600}
-                        height={800} style={{ maxWidth: '100%', height: 'auto', display: 'block' }} />
+                    <Image
+                        src="/imagenes/img2.png"
+                        alt="Camiseta Frontal"
+                        width={600}
+                        height={800}
+                        style={{
+                            maxWidth: '100%',
+                            height: 'auto',
+                            objectFit: 'contain', /* 👇 4. Esto evita que se corte el cuello */
+                            display: 'block'
+                        }}
+                    />
                 </div>
-            </div>
 
-            {/* LETRA C GIGANTE DE FONDO */}
-            <div className="big-bg" style={{ position: 'absolute', right: '5%', bottom: '-5%', fontSize: '25vw', opacity: 0.03, zIndex: -1, fontWeight: 'bold', lineHeight: 1 }}>C</div>
+                {/* LETRA C GIGANTE DE FONDO */}
+                <div className="big-bg" style={{ position: 'absolute', right: '5%', bottom: '-5%', fontSize: '25vw', opacity: 0.03, zIndex: -1, fontWeight: 'bold', lineHeight: 1 }}>C</div>
         </section>
     );
 }
