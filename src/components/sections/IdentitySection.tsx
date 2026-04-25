@@ -46,7 +46,6 @@ export default function IdentitySection() {
                     </div>
                 </div>
 
-                {/* IMAGEN: LADO DERECHO (ESTILO RECTÁNGULO HORIZONTAL) */}
                 <div className="s3-img-side reveal-right" style={{
                     flex: '1 1 450px',
                     backgroundColor: '#0a0a0a',
@@ -56,10 +55,8 @@ export default function IdentitySection() {
                     alignItems: 'center',
                     overflow: 'hidden',
                     boxShadow: '0 25px 50px rgba(0,0,0,0.5)',
-                    /* 👇 1. FORZAMOS LA CAJA A SER RECTANGULAR HORIZONTAL (ej. 4 de ancho x 3 de alto) 👇 */
-                    aspectRatio: '4/3',
-                    /* 👇 2. PADDING PARA SEPARARLA DE LOS BORDES SUPERIOR/INFERIOR 👇 */
-                    padding: '40px'
+                    aspectRatio: '740 / 390',
+                    padding: '30px'
                 }}>
                     <Image
                         src="/imagenes/img2.png"
@@ -67,9 +64,9 @@ export default function IdentitySection() {
                         width={600}
                         height={800}
                         style={{
-                            /* 👇 3. ESTO ES VITAL: La foto nunca superará el 100% del alto de la caja 👇 */
+
                             maxHeight: '100%',
-                            width: 'auto', /* Mantiene la proporción sin estirarse a los lados */
+                            width: 'auto',
                             objectFit: 'contain',
                             display: 'block'
                         }}
