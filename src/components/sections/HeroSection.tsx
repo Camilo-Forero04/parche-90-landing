@@ -118,15 +118,13 @@ export default function HeroSection() {
                         transition: 'transform 0.3s ease'
                     }}
                 >
-                    <Image
+                    {/* Usamos <img> nativo para esquivar el optimizador de Next.js y ganar 500ms+ */}
+                    <img
                         src="/imagenes/img1.webp"
-                        alt="Colombia 2026"
+                        alt="Camiseta Colombia 2026"
                         width={850}
                         height={850}
-                        priority={true}
-                        unoptimized={true}
                         fetchPriority="high"
-                        sizes="(max-width: 768px) 100vw, 800px"
                         style={{
                             width: '100%',
                             height: 'auto',
