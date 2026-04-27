@@ -1,23 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Anton } from "next/font/google";
+import { Bebas_Neue, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script';
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const anton = Anton({
+const bebas = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-anton",
+  variable: "--font-bebas",
+  display: "swap",
+});
+
+const barlow = Barlow_Condensed({
+  weight: ["300", "400", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-barlow",
   display: "swap",
 });
 
@@ -34,7 +30,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} h-full antialiased`}
+      className={`${bebas.variable} ${barlow.variable} h-full antialiased`}
     >
       <head>
         <link rel="preconnect" href="https://www.facebook.com" />
