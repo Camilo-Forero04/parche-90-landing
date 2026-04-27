@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 export default function HeroSection() {
     return (
@@ -107,7 +106,7 @@ export default function HeroSection() {
                     className="hero-img-wrap"
                     id="heroImgWrap"
                     style={{
-                        borderRadius: '32px',
+                        borderRadius: '32px', // Tu diseño original
                         overflow: 'hidden',
                         display: 'block',
                         width: '95%',
@@ -118,10 +117,10 @@ export default function HeroSection() {
                         transition: 'transform 0.3s ease'
                     }}
                 >
-                    {/* Usamos <img> nativo para esquivar el optimizador de Next.js y ganar 500ms+ */}
+
                     <img
                         src="/imagenes/img1.webp"
-                        alt="Camiseta Colombia 2026"
+                        alt="Camiseta Selección Colombia 2026 Versión Jugador G5"
                         width={850}
                         height={850}
                         fetchPriority="high"
