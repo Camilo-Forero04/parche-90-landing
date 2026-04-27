@@ -124,6 +124,7 @@ export default function HeroSection() {
                         width={850}
                         height={850}
                         priority={true}
+                        unoptimized={true}
                         fetchPriority="high"
                         sizes="(max-width: 768px) 100vw, 800px"
                         style={{

@@ -23,7 +23,7 @@ const anton = Anton({
 
 export const metadata: Metadata = {
   title: "Camiseta Colombia 2026 Versión Jugador | Pago Contraentrega",
-  description: "Camiseta Selección Colombia 2026 versión jugador réplica. Se ve como la original, sin pagar de más. Pagas al recibir. Envío gratis en Bogotá. Desde $129.900.",
+  description: "Camiseta Selección Colombia 2026 versión jugador. Se ve como la original, sin pagar de más. Pagas al recibir. Envío gratis en Bogotá. Desde $129.900.",
 };
 
 export default function RootLayout({
