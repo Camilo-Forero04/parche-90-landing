@@ -25,7 +25,7 @@ export default function OrderForm() {
         }
 
         if (typeof window !== 'undefined' && (window as any).fbq) {
-            (window as any).fbq('track', 'Lead', {
+            (window as any).fbq('track', 'Purchase', {
                 content_name: 'Camiseta Colombia Versión Jugador',
                 currency: 'COP',
                 value: 129900,
